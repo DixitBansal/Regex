@@ -1,0 +1,404 @@
+.mx-80 {
+    margin-top: 70px;
+    margin-left: 17.5rem
+        /* 320px */
+    ;
+    margin-right: 20rem
+        /* 320px */
+    ;
+}
+.third{
+    width: fit-content;
+}
+footer{
+
+    color:#70757a;
+    background-color: #f2f2f2;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+.mx-72 {
+    margin-left: 0rem
+        /* 288px */
+    ;
+    margin-right: 6rem
+        /* 288px */
+    ;
+}
+
+p {
+    margin-top: 0px;
+    padding: 0px 127px;
+}
+
+#SIvCob {
+    display: flex;
+    justify-content: center;
+}
+
+#SIvCob a {
+    color: #1a0dab;
+    text-decoration: none;
+    font-size: small;
+    margin: 0px 5px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 13px 0px;
+    font-family: arial, sans-serif;
+    font: 15px/27px Roboto, RobotoDraft, Arial, sans-serif;
+    color: rgba(0, 0, 0, .87);
+
+}
+
+table {
+    margin-top: -12px;
+}
+
+.space-x-3> :not([hidden])~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+/*! CSS Used from: Embedded */
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #681da8;
+}
+
+.gb_A {
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+#gb#gb a.gb_A {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.gb_A {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.gb_A:focus,
+.gb_A:hover,
+.gb_A:active {
+    outline: none;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.gb_A:focus,
+.gb_A:focus:hover {
+    background-color: rgba(60, 64, 67, .1);
+}
+
+.gb_A:active {
+    background-color: rgba(60, 64, 67, .12);
+}
+
+.gb_A:hover {
+    background-color: rgba(60, 64, 67, .08);
+}
+
+.gb_z .gb_A {
+    background-position: -64px -29px;
+}
+
+.gb_z .gb_A,
+.gb_z .gb_A:hover,
+.gb_z .gb_A:focus {
+    opacity: 1;
+}
+
+.gb_oa svg {
+    fill: currentColor;
+}
+
+.gb_oa a {
+    color: inherit;
+}
+
+.gb_oa svg {
+    color: #5f6368;
+    opacity: 1;
+}
+
+.avtar {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+}
+
+.ring-2 {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-white {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+small {
+    color: black;
+}
+
+/*! CSS Used from: Embedded */
+.uU7dJb {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+
+/*! CSS Used from: Embedded */
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #681da8;
+}
+
+.z1asCe {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.z1asCe svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/*! CSS Used from: Embedded */
+.EwsJzb {
+    display: block;
+}
+
+.rIbAWc {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.B8Kd8d {
+    position: absolute;
+}
+
+.sAKBe {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*! CSS Used from: Embedded */
+.gLSAk {
+    border: none;
+    display: block;
+    outline: none;
+}
+
+.rShyOb {
+    white-space: nowrap;
+}
+
+.gLSAk {
+    border-radius: 8px;
+}
+
+.gLSAk {
+    padding: 5px 0;
+}
+
+/*! CSS Used from: Embedded */
+.ErsxPb {
+    display: block;
+    position: relative;
+}
+
+.znKVS {
+    padding: 0 16px;
+    vertical-align: middle;
+}
+
+.znKVS.tnhqA {
+    padding: 0;
+}
+
+.tnhqA>* {
+    padding: 0 16px;
+}
+
+.ErsxPb:hover {
+    cursor: pointer;
+}
+
+.ErsxPb {
+    cursor: default;
+}
+
+.dPaec,
+g-menu-item[disabled] {
+    pointer-events: none;
+    cursor: default;
+}
+
+.dPaec {
+    border-top: 1px solid;
+    height: 0;
+    margin: 5px 0;
+}
+
+.znKVS {
+    line-height: 23px;
+}
+
+.gvybPb,
+.ErsxPb:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dPaec,
+g-menu-item[disabled] {
+    color: #cdcdcd !important;
+}
+
+.dPaec {
+    border-top-color: #dadce0;
+}
+
+/*! CSS Used from: Embedded */
+.SSwjIe {
+    padding: 0 20px;
+}
+
+.KxwPGc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:1200px) {
+    .KxwPGc {
+        justify-content: space-evenly;
+    }
+}
+
+.pHiOh {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.pHiOh,
+a.pHiOh {
+    color: #70757a;
+}
+
+/*! CSS Used from: Embedded */
+.ayzqOc:hover {
+    text-decoration: underline;
+}
+
+/*! CSS Used from: Embedded */
+.cF4V5c {
+    background-color: #fff;
+}
+
+.cF4V5c g-menu-item {
+    display: block;
+    font-size: 14px;
+    line-height: 23px;
+    white-space: nowrap;
+}
+
+.cF4V5c g-menu-item a,
+.cF4V5c .y0fQ9c {
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.cF4V5c g-menu-item a,
+.cF4V5c g-menu-item a:visited,
+.cF4V5c g-menu-item a:hover {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/*! CSS Used from: Embedded */
+.tFYjZe {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+.tFYjZe:hover .iOHNLb,
+.tFYjZe:focus .iOHNLb {
+    opacity: 1;
+}
+
+.iOHNLb {
+    color: #70757a;
+    height: 20px;
+    margin-top: -2px;
+    opacity: 0;
+    width: 20px;
+}
