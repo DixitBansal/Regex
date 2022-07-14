@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Facebook – log in or sign up</title>
+    <link type="image/png" sizes="150x150" rel="icon" href="/assets/icon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            background: rgb(255, 255, 255);
+            direction: ltr;
+            line-height: 1.34;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p {
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 28px;
+            width: 500px;
+            color: rgb(28, 30, 33);
+        }
+
+        .login {
+            background-color: rgb(24, 119, 242);
+            border: none;
+            border-radius: 6px;
+
+        }
+
+        .newacc {
+            background-color: rgb(66, 183, 42);
+            border: none;
+            border-radius: 6px;
+        }
+
+        .last {
+            border-top: none;
+            color: rgb(28, 30, 33);
+            font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            padding-top: 0px;
+        }
+
+        /*! CSS Used from: https://static.xx.fbcdn.net/rsrc.php/v3/yq/l/0,cross/L0VTH1UsUXD.css?_nc_x=Ij3Wp8lg5Kz */
+        ._95ke #pageFooterChildren a,
+        ._95ke .localeSelectorList a {
+            color: #8a8d91;
+        }
+
+        ._8opy {
+            padding-top: 20px;
+        }
+
+        @media only screen and (max-width: 1075px) {
+            #facebook ._8opy #pageFooter {
+                margin: 0 40px;
+                width: auto;
+            }
+        }
+
+        ::-ms-reveal {
+            display: none;
+        }
+
+        /*! CSS Used from: https://static.xx.fbcdn.net/rsrc.php/v3/yK/l/0,cross/fARQz3e8huT.css?_nc_x=Ij3Wp8lg5Kz */
+        a {
+            color: #385898;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        *::-webkit-input-placeholder {
+            color: #606770;
+        }
+
+        *:focus::-webkit-input-placeholder {
+            color: #bec3c9;
+        }
+
+        ._19_u :focus {
+            outline: none !important;
+        }
+
+        /*! CSS Used from: https://static.xx.fbcdn.net/rsrc.php/v3/y7/l/0,cross/X7Tig_kbrQA.css?_nc_x=Ij3Wp8lg5Kz */
+        #facebook .accessible_elem {
+            clip: rect(1px, 1px, 1px, 1px);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        #facebook ._-kb div {
+            font-family: inherit;
+        }
+
+        #facebook ._-kb span {
+            font-family: inherit;
+        }
+
+        #facebook ._-kb a {
+            font-family: inherit;
+        }
+
+        i.img {
+            -ms-high-contrast-adjust: none;
+        }
+
+        ._42ft {
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        ._42ft:hover {
+            text-decoration: none;
+        }
+
+        /*! CSS Used from: https://static.xx.fbcdn.net/rsrc.php/v3/yy/l/0,cross/BwinHlSC8nR.css?_nc_x=Ij3Wp8lg5Kz */
+        ._4jy0 {
+            border: 1px solid;
+            border-radius: 2px;
+            box-sizing: content-box;
+            font-size: 12px;
+            -webkit-font-smoothing: antialiased;
+            font-weight: bold;
+            justify-content: center;
+            padding: 0 8px;
+            position: relative;
+            text-align: center;
+            text-shadow: none;
+            vertical-align: middle;
+        }
+
+        ._4jy0:before {
+            content: '';
+            display: inline-block;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        html ._4jy0:focus {
+            box-shadow: 0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15);
+            outline: none;
+        }
+
+        ._19_u ._4jy0:focus {
+            box-shadow: none;
+        }
+
+        ._4jy0 {
+            transition: 200ms cubic-bezier(.08, .52, .52, 1) background-color, 200ms cubic-bezier(.08, .52, .52, 1) box-shadow, 200ms cubic-bezier(.08, .52, .52, 1) transform;
+        }
+
+        ._4jy0:active {
+            transition: none;
+        }
+
+        ._4jy0 .img {
+            bottom: 1px;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        ._517h {
+            background-color: #f5f6f7;
+            border-color: #ccd0d5;
+            color: #4b4f56;
+        }
+
+        ._517h:hover {
+            background-color: #ebedf0;
+        }
+
+        ._517h:active {
+            background-color: #dddfe2;
+            border-color: #bec3c9;
+        }
+
+        ._517i {
+            height: 18px;
+            line-height: 18px;
+        }
+
+        ._2pid {
+            padding-top: 8px;
+        }
+
+        .sp_Awgqz7K4lHq_1_5x {
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/zsrhAn-mUUY.png);
+            background-size: 284px 330px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+        }
+
+        .sp_Awgqz7K4lHq_1_5x.sx_85e85d {
+            width: 16px;
+            height: 16px;
+            background-position: -108px -288px;
+        }
+
+        .sp_Awgqz7K4lHq_1_5x.sx_0b4ad3 {
+            width: 12px;
+            height: 12px;
+            background-position: -236px -252px;
+        }
+
+        /*! CSS Used from: https://static.xx.fbcdn.net/rsrc.php/v3/ys/l/0,cross/oWamC7G_n1k.css?_nc_x=Ij3Wp8lg5Kz */
+        ._41ug {
+            display: inline-block;
+            padding-right: 14px;
+            position: relative;
+        }
+
+        ._41ug .img {
+            position: absolute;
+            top: 1px;
+            vertical-align: middle;
+        }
+
+        #pageFooter {
+            color: #737373;
+            margin: 0 auto;
+            width: 980px;
+        }
+
+        #pageFooter a {
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        #pageFooter a:last-child {
+            margin-right: 0;
+        }
+
+        #pageFooter a:hover {
+            text-decoration: underline;
+        }
+
+        #pageFooter .copyright {
+            font-size: 11px;
+        }
+
+        #pageFooter .pageFooterLinkList {
+            line-height: 1.6;
+            margin-left: -20px;
+        }
+
+        #contentCurve {
+            border-bottom: 1px solid #dddfe2;
+            font-size: 1px;
+            height: 8px;
+            margin-bottom: 8px;
+        }
+
+        .localeSelectorList {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .mvl {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        ._4ki>li {
+            border-width: 0 0 0 1px;
+            display: inline-block;
+        }
+
+        ._509->li {
+            vertical-align: top;
+        }
+
+        .uiList>li:first-child {
+            border-width: 0;
+        }
+
+        ._4ki._703>li {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        ._4ki._6-j>li {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        ._4ki._6-i>li {
+            padding-right: 0;
+        }
+
+        ._4ki._6-h>li:first-child {
+            padding-left: 0;
+        }
+
+        ._4ki._6-h>li:last-child {
+            padding-right: 0;
+        }
+    </style>
+  <link rel="stylesheet" href="/assets/index.7aa3db0f.css">
+</head>
+
+<body class=" bg-gray-100">
+    <div class="container ">
+
+        <table class="mt-28 flex justify-center">
+            <tbody class="">
+                <tr>
+                    <td>
+                        <img src="/assets/fb.9531e960.svg" alt="" height="50px" width="300px">
+                        <p class="ml-8">Facebook helps you connect and share with the people in your life.</p>
+
+                    </td>
+                    <td>
+                        <div class="pl-24">
+
+                            <form action="#" class="flex flex-col bg-white p-3 drop-shadow-lg rounded-lg w-[400px] border border-gray-500">
+                                <input type="text" placeholder="Email address or phone number"
+                                    class="px-4 h-12 my-2 border-2 border-gray-200 rounded-lg text-base">
+                                <input type="password" name="" id="" placeholder="Password"
+                                    class="px-4 h-11 my-2    border-2 border-gray-200 rounded-lg text-base">
+                                <button class="login text-white my-2  rounded-md font-bold text-lg h-12">Log In</button>
+                                <a href="#" class="text-center my-2 text-blue-600  text-base ">Forgotten Password?</a>
+                                <hr class="my-2">
+                                <div class="flex justify-center my-2 mt-3">
+
+                                    <button class="newacc text-white rounded-md font-bold text-base h-12  px-3 ">Create
+                                        New Account</button>
+                                </div>
+                            </form>
+                            <div class="last my-2 mt-4  text-center">
+                                <a href="/pages/create/?ref_type=registration_form" class="font-bold">Create a Page</a>
+                                for a celebrity, brand or business.
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer flex justify-center mt-52 ">
+        <div class="_95ke _8opy  bottom-0 bg-white w-full">
+            <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
+                <ul class="uiList localeSelectorList _2pid _509- _4ki _6-h _6-j _6-i" data-nocookies="1">
+                    <li>English (UK)</li>
+                    <li><a class="_sv4" dir="ltr" href="https://hi-in.facebook.com/"
+    
+                            title="Hindi">हिन्दी</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://pa-in.facebook.com/"
+    
+                            title="Punjabi">ਪੰਜਾਬੀ</a></li>
+                    <li><a class="_sv4" dir="rtl" href="https://ur-pk.facebook.com/"
+    
+                            title="Urdu">اردو</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://gu-in.facebook.com/"
+    
+                            title="Gujarati">ગુજરાતી</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://mr-in.facebook.com/"
+    
+                            title="Marathi">मराठी</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://bn-in.facebook.com/"
+    
+                            title="Bengali">বাংলা</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://ta-in.facebook.com/"
+    
+                            title="Tamil">தமிழ்</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://te-in.facebook.com/"
+    
+                            title="Telugu">తెలుగు</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://ml-in.facebook.com/"
+    
+                            title="Malayalam">മലയാളം</a></li>
+                    <li><a class="_sv4" dir="ltr" href="https://kn-in.facebook.com/"
+    
+                            title="Kannada">ಕನ್ನಡ</a></li>
+                    <li><a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog"
+                            ajaxify="/settings/language/language/?uri=https%3A%2F%2Fkn-in.facebook.com%2F&amp;source=www_list_selector_more"
+                            href="#" title="Show more languages"><i class="img sp_Awgqz7K4lHq_1_5x sx_0b4ad3"></i></a></li>
+                </ul>
+                <div id="contentCurve"></div>
+                <div id="pageFooterChildren" role="contentinfo" aria-label="Facebook site links">
+                    <ul class="uiList pageFooterLinkList _509- _4ki _703 _6-i">
+                        <li><a href="/reg/" title="Sign up for Facebook">Sign Up</a></li>
+                        <li><a href="/login/" title="Log in to Facebook">Log In</a></li>
+                        <li><a href="https://messenger.com/" title="Take a look at Messenger.">Messenger</a></li>
+                        <li><a href="/lite/" title="Facebook Lite for Android.">Facebook Lite</a></li>
+                        <li><a href="https://www.facebook.com/watch/" title="Browse our Watch videos.">Watch</a></li>
+                        <li><a href="/places/" title="Take a look at popular places on Facebook.">Places</a></li>
+                        <li><a href="/games/" title="Check out Facebook games.">Games</a></li>
+                        <li><a href="/marketplace/" title="Buy and sell on Facebook Marketplace.">Marketplace</a></li>
+                        <li><a href="https://pay.facebook.com/" title="Learn more about Facebook Pay"
+                                target="_blank">Facebook Pay</a></li>
+                        <li><a href="https://www.oculus.com/" title="Learn more about Oculus" target="_blank">Oculus</a>
+                        </li>
+                        <li><a href="https://portal.facebook.com/" title="Learn more about Facebook Portal"
+                                target="_blank">Portal</a></li>
+                        <li><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&amp;h=AT1PizR-HY-PtOl-SFnP-NiO4JPhgpg6gruueJNmt1VRWIHOLUECv5cbAnU39qR-jksiYUJYl3Kj8_i77MILtVeo2L5XYLdC-Vx0udWBbBv5fsxFbcwxCTj8zVFSxnHSrihuJo8-y95T2qWm_2vawg"
+                                title="Take a look at Instagram" target="_blank" rel="noopener nofollow"
+                                data-lynx-mode="asynclazy">Instagram</a></li>
+                        <li><a href="https://www.bulletin.com/" title="Take a look at Bulletin newsletter">Bulletin</a></li>
+                        <li><a href="/local/lists/245019872666104/" title="Browse our Local Lists directory.">Local</a></li>
+                        <li><a href="/fundraisers/" title="Donate to worthy causes.">Fundraisers</a></li>
+                        <li><a href="/biz/directory/" title="Browse our Facebook Services directory.">Services</a></li>
+                        <li><a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D"
+                                title="See the Voting Information Centre">Voting Information Centre</a></li>
+                        <li><a href="/groups/explore/" title="Explore our groups.">Groups</a></li>
+                        <li><a href="https://about.facebook.com/" accesskey="8"
+                                title="Read our blog, discover the resource centre and find job opportunities.">About</a>
+                        </li>
+                        <li><a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto"
+                                title="Advertise on Facebook">Create ad</a></li>
+                        <li><a href="/pages/create/?ref_type=site_footer" title="Create a Page">Create Page</a></li>
+                        <li><a href="https://developers.facebook.com/?ref=pf"
+                                title="Develop on our platform.">Developers</a></li>
+                        <li><a href="/careers/?ref=pf"
+                                title="Make your next career move to our brilliant company.">Careers</a></li>
+                        <li><a data-nocookies="1" href="/privacy/explanation/"
+                                title="Learn about your privacy and Facebook.">Privacy</a></li>
+                        <li><a href="/policies/cookies/" title="Learn about cookies and Facebook."
+                                data-nocookies="1">Cookies</a></li>
+                        <li><a class="_41ug" data-nocookies="1" href="https://www.facebook.com/help/568137493302217"
+                                title="Learn about AdChoices.">AdChoices<i
+                                    class="img sp_Awgqz7K4lHq_1_5x sx_85e85d"></i></a></li>
+                        <li><a data-nocookies="1" href="/policies?ref=pf" accesskey="9"
+                                title="Review our terms and policies.">Terms</a></li>
+                        <li><a href="/help/?ref=pf" accesskey="0" title="Visit our Help Centre.">Help</a></li>
+                        <li><a href="help/637205020878504" title="Visit our contact uploading and non-users notice.">Contact
+                                uploading and non-users</a></li>
+                        <li><a accesskey="6" class="accessible_elem" href="/settings"
+                                title="View and edit your Facebook settings.">Settings</a></li>
+                        <li><a accesskey="7" class="accessible_elem"
+                                href="/allactivity?privacy_source=activity_log_top_menu"
+                                title="View your activity log">Activity log</a></li>
+                    </ul>
+                </div>
+                <div class="mvl copyright">
+                    <div><span> Meta © 2022</span></div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
