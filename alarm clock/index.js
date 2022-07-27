@@ -7,32 +7,27 @@ function time(){
     console.log(time.length);
     if((time[0]==0 && time[1]==0) && time[3]<4){
         document.getElementById('rt').innerHTML="Wake up!";
-        document.getElementById('wakeup').style.display="block";
-        nodisplay("workout","shower","breakfast");
+        document.getElementById('image').src="/goodnight.gif";
     }
     else if((time[0]==1 && time[1]==5) && time[3]<3){
-        // document.getElementById('routine').style.display="none";
+        
         document.getElementById('rt').innerHTML="Workout Time";
-        document.getElementById('workout').style.display="block";
-        nodisplay("wakeup","shower","breakfast");
+
+        document.getElementById('image').src="/goodnight.gif";
     }
     else if((time[0]==1 && time[1]==5) && time[3]==5){
         document.getElementById('rt').innerHTML="Shower Time";
-        document.getElementById('shower').style.display="block";
-        nodisplay("wakeup","workout","breakfast");
+      
+        document.getElementById('image').src="/goodnight.gif";
     }
-    else if((time[0]==1 && time[1]==4) && time[3]==5){
-        document.getElementById('breakfast').style.display="block";
-        nodisplay("wakeup","shower","workout");
+    else if((time[0]==2 && time[1]==2) && time[3]==5){
+        document.getElementById('rt').innerHTML="Goodnight";
+        document.getElementById('image').src="/goodnight.gif";
+        
     }
     else{
         
     }
     
-}
-function nodisplay(x,y,z){
-    document.getElementById(x).style.display="none";
-    document.getElementById(y).style.display="none";
-    document.getElementById(z).style.display="none";
 }
 setInterval(time,1000);
