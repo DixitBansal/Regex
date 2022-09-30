@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+   
+    
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+    <link rel="stylesheet" href="./home.css" />
+    
+    <style>
+        img {
+           opacity: 4.0;
+        }
+        footer {
+        background-color: #090800;
+        }
+        section{
+            background-color: black;
+        }
+        footer div div:hover{
+            color: red;
+        }
+        @media only screen and (max-width: 300px) {
+           .fom{
+              width: 120px;
+           }
+           .foot{
+            font-size: x-small;
+           }
+           
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+        .fom{
+           width: 200px;
+        }
+        .foot{
+            font-size: smaller;
+        }
+
+    }
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+        .fom{
+           width: 350px;
+        }
+        .foot{
+            font-size: small;
+        }
+        .formsidetext{
+            margin-bottom: 20px;
+        }
+        }
+        @media only screen and (min-width: 800px) {
+        .fom{
+           width: 500px;
+        }
+        .foot{
+            font-size: medium;
+        }
+        }
+     p{
+      font-size: medium;
+     }
+     .banner img{
+      opacity: 10;
+     }
+     .slider1{
+        height: 200px;
+        margin: auto;
+        
+        position: relative;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+      .slide-track1{
+        display: flex;
+        width: calc(250px*20);
+        animation: scroll 60s linear infinite;
+      }
+      .slide-track1:hover{
+        animation-play-state: paused;
+      }
+      @keyframes scroll {
+        0%{
+          transform: translateX(0);
+        }
+        100%{
+          transform: translateX(calc(-250px*9));
+        }
+      }
+      .slide1{
+        height: 200px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+      }
+      .slider1 img{
+        width: 100%;
+       
+        transition: transform 1s;
+      }
+      .slider1 img:hover{
+        transform: translateZ(20px);
+      }
+      .slider1::before,.slider1::after{
+        background: linear-gradient(to right,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 15%;
+        z-index: 2;
+      }
+      .slider1::before{
+        left: 0;
+        top: 0;
+      }
+      .slider1::after{
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body style="padding-left: 7.5%; padding-right: 7.5%; box-sizing: border-box;">
+    
+    <div class="container1 mt-0 fixed-top">
+      <h1><img src="./logo.png" alt=""></h1>
+      <h1 class="fs-sm-6">KIRLOSKAR TECHNOLOGIES</h1>
+      <div class="navbar_section">
+
+          <navbar class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Kirloskar Group</a></li>
+                      <li><a class="dropdown-item" href="#">Kirloskar Technologies</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Management Team</a></li>
+                      <li><a class="dropdown-item" href="#">Management Team</a></li>
+                      <li><a class="dropdown-item" href="#">Management Team</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Solutions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Support
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Life@KTPL
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Media
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fw-bold" aria-current="page" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item searchbar">
+                    <input class="search_input" type="text" name="">
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </navbar>
+
+      </div>
+    </div>
+
+
+  
+
+
+      <div class="container banner" style="margin-top: 100px;">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000" style="height: 380px;">
+              <img src="./p4.jpeg" class="d-block w-100" alt="...">
+              <div class="position-absolute top-50 start-50 translate-middle text-light fs-4 fw-bold d-none d-md-block">Technology From The Frontier OF Medical Science.</div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-light fw-bold">First slide label</h5>
+                <p class="text-danger">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000" style="height: 380px;">
+              <img src="./p3.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-light fw-bold">Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="height: 380px;">
+              <img src="./p6.jpeg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-light fw-bold">Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+
+    <!-- aboutus -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="fs-4 text-danger mt-2">About Us</h2>
+          <p class="lh-sm">
+            Kirloskar Technologies, popularly known as KTPL and a part of the
+            125 years old, multi-billion US dollars conglomerate – Kirloskar
+            Group, has been a successful healthcare enterprise for more than
+            twenty five years. KTPL represented known global manufacturers of
+            high-tech medical devices in India, offering a multi-disciplinary
+            product portfolio catering to the fields of Neurosurgery, Nuclear
+            Medicine, Oncology, Radiography, Vascular Surgery, Minimal Invasive
+            Surgery and Plastic & Reconstructive Surgery. KTPL is fulfilling the
+            needs of Indian health sector by equipping the hospitals with latest
+            high-tech medical equipment.
+          </p>
+          <p class="mt-3 lh-sm">
+            KTPL is in the forefront in Medical Assets Management sector. It is
+            actively engaged in planning & maintaining medical equipment of all
+            kinds in small, major and tertiary hospitals across India.
+          </p>
+          <div class="mt-5 text-start">
+            <button class="btn btn-outline-danger rounded-pill px-5">
+              About Us
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="container" style="width: 350px">
+              <div class="row shadow p-3 mb-5 bg-body rounded">
+                <div class="col-lg-4"><img src="./person1.jpg" alt="" /></div>
+                <div class="col-lg-8 justify-center">
+                  <p class="lh-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corrupti atque ipsa ratione eaque voluptatibus illum,
+                    recusandae sunt ut voluptates minus?
+                  </p>
+                  <div class="mt-3 text-end">
+                    <button type="button" class="btn btn-outline-danger">
+                      Read more...
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container" style="width: 350px">
+              <div class="row shadow p-3 mb-5 bg-body rounded">
+                <div class="col-lg-4"><img src="./person2.png" alt="" /></div>
+                <div class="col-lg-8 justify-center">
+                  <p class="lh-1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Corrupti atque ipsa ratione eaque voluptatibus illum,
+                    recusandae sunt ut voluptates minus?
+                  </p>
+                  <div class="mt-3 text-end">
+                    <button type="button" class="btn btn-outline-danger">
+                      Read more...
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- lll -->
+    <section class="shadow-lg p-3 bg-body rounded">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="fs-4 text-danger mt-2">
+              Best-in-Class Medical Products
+            </h2>
+            <p class="justify-center mt-3 text-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              et dolor totam perspiciatis delectus voluptas? Magni debitis
+              expedita molestiae. Illo consectetur delectus libero aperiam?
+              Saepe facere aliquid sit eveniet ex?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ratione, repellendus. Lorem ipsum
+              dolor sit amet.
+            </p>
+            <button class="btn btn-outline-danger rounded-pill px-5">
+              Our Services
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="./Product-compilation.jpg"
+              class="img-fluid"
+              height="363px"
+              width="726px"
+              alt="product"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./child.png" class="img-fluid" alt="product" />
+          </div>
+          <div class="col-lg-6 py-4">
+            <h2 class="fs-4 text-danger mt-3">
+              Best-in-Class Medical Products
+            </h2>
+            <p class="justify-center text-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              et dolor totam perspiciatis delectus voluptas? Magni debitis
+              expedita molestiae. Illo consectetur delectus libero aperiam?
+              Saepe facere aliquid sit eveniet ex?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ratione, repellendus. Lorem ipsum
+              dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Facilis placeat officia illo totam nemo sit deserunt,
+              pariatur minima tempora autem.
+            </p>
+            <button class="btn btn-outline-danger rounded-pill px-5">
+              Our Expertise
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-black p-5 container" style="min-height: 50vh; place-items: center; ">
+      <p class="fs-3 text-danger d-inline">PRODUCTS BY </p><p class="fs-3 text-light d-inline">CATEGORY</p>
+      <div class="slider1 mt-3">
+        <div class="slide-track1">
+          <div class="slide1">
+            <img src="./p1.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p6.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p2.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p3.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p4.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p5.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p6.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p1.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p2.jpeg" alt="">
+          </div>
+          <!-- same 9 -->
+          <div class="slide1">
+            <img src="./p1.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p6.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p2.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p3.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p4.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p5.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p6.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p1.jpeg" alt="">
+          </div>
+          <div class="slide1">
+            <img src="./p2.jpeg" alt="">
+        </div>
+      </div>
+      
+
+    </section>
+    
+      <section class="pt-2 mt-4 pb-2 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3 text-danger text-start">Our Featured Products</h3>
+            </div>
+
+            <div class="col-12">
+              <div
+                id="carouselExampleIndicators2"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active"  data-bs-interval="100">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item"  data-bs-interval="100">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item"  data-bs-interval="100">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Special title treatment</h4>
+                            <p class="card-text">
+                              With supporting text below as a natural lead-in to
+                              additional content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <section class="mt-3">
+        <div class="container text-center"  style="color: white;">
+            <div class="row">
+              <div class="formsidetext col-sm-4" style="margin-top: 100px; margin-bottom: 100px;">
+                <div style="display: flex;"><h2 style="color: red;">LET'S&nbsp;</h2><h2>TALK</h2> </div>
+                <div style="display: flex;"><p>Interested in our service?<br>
+                    Have a question? <br>  
+                    We'd be happy to help you! <br></p></div>
+                </div>
+              <div class="col-sm-8" style="margin-top: 40px; margin-bottom: 40px;">
+                <form">
+                    <div>
+                        <input class="fom text-light mt-2" style="background-color: black; " placeholder="Name">
+                      </div>
+                    <div>
+                        <input class="fom text-light mt-2" style="background-color: black; "  placeholder="Email">
+                      </div>
+                      <div>
+                        <input class="fom text-light mt-2" style="background-color: black; " placeholder="Phone">
+                    </div>
+                      <div>
+                        <input class="fom text-light mt-2" style="background-color: black;" placeholder="Message">
+                      </div>
+                    <button   style=" margin: 10px; " class="form-control  btn btn-danger fom">SEND</button>
+                  </form>
+              </div>
+            </div>
+      </section>
+    <h2 class="fs-4 text-danger mt-2 px-4">
+        Happy Clients
+       </h2>
+    <div class="container infinite_slider shadow p-3 mt-0 bg-body rounded">
+      <div id="logos-home-page">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-13024"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-wipro_logo.jpg"
+                alt=""
+                width="60"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13023"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-w.l.-gore-logo.jpg"
+                alt=""
+                width="110"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13022"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-visa.jpg"
+                alt=""
+                width="188"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13021"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-vf_circle_logo-290.jpg"
+                alt=""
+                width="60"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-13020"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-unitedhealthcareprocycling_logo2017-trans.jpg"
+                alt=""
+                width="285"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13019"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-tyco-electronics-logo.jpg"
+                alt=""
+                width="184"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13018"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-toyota-logo.jpg"
+                alt=""
+                width="73"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13017"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-thyssenkrupp.jpg"
+                alt=""
+                width="79"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-13016"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-tech_mahindra_new_logo.jpg"
+                alt=""
+                width="212"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-13015"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-standard-chartered-bank-777x437.jpg"
+                alt=""
+                width="155"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13014"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-solix-logo.jpg"
+                alt=""
+                width="237"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13013"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-smuckers_logo.jpg"
+                alt=""
+                width="194"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13012"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-siemens-logo-300x49.jpg"
+                alt=""
+                width="300"
+                height="49"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13011"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-sap-logo.jpg"
+                alt=""
+                width="118"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13010"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-paypal.jpg"
+                alt=""
+                width="230"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13009"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-otterbox.jpg"
+                alt=""
+                width="92"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13008"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-ntt_communications_.jpg"
+                alt=""
+                width="243"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-13007"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-nike-logo-free-png-image.jpg"
+                alt=""
+                width="115"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-13006"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-nestle.jpg"
+                alt=""
+                width="202"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13005"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-mtuity-logo.jpg"
+                alt=""
+                width="173"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13004"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-lancaster.jpg"
+                alt=""
+                width="187"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13003"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-kaneka.jpg"
+                alt=""
+                width="233"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13002"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-intel-logo.jpg"
+                alt=""
+                width="90"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13001"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-ibm_logo.jpg"
+                alt=""
+                width="150"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12999"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-hitachi_logo-300x52.jpg"
+                alt=""
+                width="300"
+                height="52"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-13000"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-huawei-logo-web.jpg"
+                alt=""
+                width="241"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-12998"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-hero-cycles-logo.jpg"
+                alt=""
+                width="242"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-12997"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-heatcraft.jpg"
+                alt=""
+                width="195"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12995"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-fujitsu.jpg"
+                alt=""
+                width="119"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12996"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-goodyear-tires-in-ohio-300x60.jpg"
+                alt=""
+                width="300"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12994"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-fedexlogo.jpg"
+                alt=""
+                width="204"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12993"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-ezdi-logo.jpg"
+                alt=""
+                width="279"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12992"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-ericsson.jpg"
+                alt=""
+                width="295"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12991"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-dpt_dupont_logo_thumbnail_690x345.jpg"
+                alt=""
+                width="150"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12990"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-collabera-logo.jpg"
+                alt=""
+                width="217"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-medium wp-image-12989"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-coca-cola.jpg"
+                alt=""
+                width="175"
+                height="60"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="alignnone size-full wp-image-12988"
+                src="https://garwoodcenter.wpengine.com/wp-content/uploads/2018/02/mini-logo-applied_materials_logo.jpg"
+                alt=""
+                width="237"
+                height="60"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="foot mt-2">
+        <div class="d-flex flex-wrap" style="color: white;  justify-content: space-evenly; padding: 10px;">
+            <div style=" margin: 50px;">
+                <h4>About Us</h4>
+                <p>Kirloskar Group <br> Kirloskar Technologies <br> Management Team <br> <br> Life @ KPTL/Careers <br> News/Events</p>
+                <h5>Privacy Policy</h5>
+            </div>
+            <div style=" margin: 50px;"><h4>Products</h4>
+                <h5>Oncology</h5></div>
+            <div class="img" style=" margin: 50px;"> <img src="https://www.kirloskarmedical.com/uploads/2/9/0/5/29050285/editor/25-year-logo-png.png?1515254869" alt="" ></div>
+            <div style=" margin: 50px;"><h4>Corporate Office</h4>
+            <p>B-58, First Floor, Defence Colony,<br> 
+                Bhisham Pitamah Marg, <br>
+                New Delhi - 110024, India.<br></p>
+                <br>
+                <p><strong>Phone</strong> : +91-11-43523125 <br>
+                    <strong>Phone</strong> : +91-11-41403967 <br>
+                    <strong>Fax</strong> : +91-11-24331367 <br></p>
+            </div>
+        </div>
+        <div style="color: white; text-align: center; font-size: small;"><p>Website Designed & Maintained : Regex Software Services</p></div>
+      </footer>
+    
+   
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="	https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></scrip>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
